@@ -1,1 +1,1 @@
-export * from './Button'
+export { DropdownContainer as Dropdown } from './containers/DropdownContainer'
