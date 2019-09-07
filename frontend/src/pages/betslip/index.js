@@ -1,1 +1,1 @@
-export { PageContainer as BetslipPageContainer } from './containers'
+export { PageContainer as Betslip } from './containers'

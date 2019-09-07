@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { PageLayout } from '../components'
+// import { PageLayout } from '../components'
 
-export const PageContainer = () => <PageLayout />
+export const PageContainer = () => <>betslip.success</>
 
 PageContainer.propTypes = {}

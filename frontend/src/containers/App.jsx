@@ -3,8 +3,10 @@ import { Provider } from 'react-redux'
 
 import { store } from 'store'
 
+import { Routing } from 'app'
+
 export const App = () => (
   <Provider store={store}>
-    <h1>Hola mundo</h1>
+    <Routing />
   </Provider>
 )

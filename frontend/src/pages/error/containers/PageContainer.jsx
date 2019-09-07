@@ -2,6 +2,6 @@ import React from 'react'
 
 // import { PageLayout } from '../components'
 
-export const PageContainer = () => <>betslip</>
+export const PageContainer = () => <>error</>
 
 PageContainer.propTypes = {}
