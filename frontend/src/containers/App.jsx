@@ -3,6 +3,8 @@ import { Provider } from 'react-redux'
 
 import { store } from 'store'
 
-export const AppContainer = () => (
-  <Provider store={store} />
+export const App = () => (
+  <Provider store={store}>
+    <h1>Hola mundo</h1>
+  </Provider>
 )

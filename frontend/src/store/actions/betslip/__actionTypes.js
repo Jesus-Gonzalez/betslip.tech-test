@@ -1,4 +1,4 @@
-import { getActionTypesAsEntries } from 'store'
+import { getActionTypesAsEntries } from 'store/utils'
 
 const fetchBets = 'BETSLIP::FETCH_BETS'
 const fetchBetsSuccess = 'BETSLIP::FETCH_BETS::SUCCESS'

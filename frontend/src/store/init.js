@@ -4,9 +4,11 @@ import reduxDevtools from 'redux-devtools'
 
 import { reducers } from './reducers'
 
-const middleware = applyMiddleware(
-  process.env !== 'production' && reduxDevtools,
+const middlewareCollection = [
+  process.env.NODE_ENV !== 'production' && reduxDevtools,
   reduxThunk
-)
+].filter(m => m)
 
-export const store = createStore(reducers, null, middleware)
+const middleware = applyMiddleware(...middlewareCollection)
+
+export const store = createStore(reducers, {}, middleware)
