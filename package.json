@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "cd frontend && npm install",
     "start-server": "node ./api/server.js",
-    "start-frontend": "cd frontend && react-scripts start"
+    "start-frontend": "cd frontend && npm start"
   },
   "repository": {
     "type": "git",
