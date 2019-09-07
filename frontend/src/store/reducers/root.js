@@ -1,3 +1,7 @@
-import * as reducers from './lib'
+import { combineReducers } from 'redux'
 
-export const Reducer = (action, ...args) =>
+import { Reducer as BetslipReducers } from './betslip'
+
+export const reducers = combineReducers(
+  BetslipReducers
+)
