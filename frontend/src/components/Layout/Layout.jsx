@@ -15,7 +15,7 @@ const propTypes = {
   ])
 }
 
-export const PageLayout = ({ children, ...props }) => (
+export const Layout = ({ children, ...props }) => (
   <Body>
     <Header />
     <Main>
@@ -25,4 +25,4 @@ export const PageLayout = ({ children, ...props }) => (
   </Body>
 )
 
-PageLayout.propTypes = propTypes
+Layout.propTypes = propTypes

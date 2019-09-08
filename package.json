@@ -6,7 +6,8 @@
   "scripts": {
     "preinstall": "cd frontend && npm install",
     "start-server": "node ./api/server.js",
-    "start-frontend": "cd frontend && npm start"
+    "start-frontend": "cd frontend && npm start",
+    "start": "npm run start-server & npm run start-frontend"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "prettier": "1.18.2",
+    "redux-devtools-extension": "^2.13.8",
     "standard": "^14.1.0"
   }
 }

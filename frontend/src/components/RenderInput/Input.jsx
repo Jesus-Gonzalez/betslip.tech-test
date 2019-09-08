@@ -3,7 +3,7 @@ import classnames from 'classnames'
 
 import styles from './styles.module.scss'
 
-export const Input = ({ className, ...props }) => {
+export const Input = ({ className, input, ...props }) => {
   const inputClass = React.memo(
     () => classnames(className, styles.input),
     [className]
@@ -12,6 +12,7 @@ export const Input = ({ className, ...props }) => {
   return (
     <input
       className={inputClass}
+      {...input}
       {...props}
     />
   )

@@ -2,25 +2,25 @@ import React from 'react'
 
 import { Dropdown } from 'components/Dropdown/components'
 
-export const DropdownContainer = ({ onSelectDropdownOption, ...props }) => {
+export const DropdownContainer = ({ onChange, ...props }) => {
   const [isVisible, setIsVisible] = React.useState(false)
 
   const { options, value } = props
   const selectedOption = React.useMemo(
-    () => options.find(o => o.value === value),
+    () => options.find(o => o.value === value) || options.find(option => option.default),
     [value, options]
   )
 
-  const onSelectDropdownOptionHandler = (option) => {
+  const onChangeOption = (option) => {
     setIsVisible(false)
-    onSelectDropdownOption(option)
+    onChange(option)
   }
 
   return (
     <Dropdown
       {...props}
       isVisible={isVisible}
-      onSelectDropdownOption={onSelectDropdownOptionHandler}
+      onChange={onChangeOption}
       selectedOption={selectedOption}
       setIsVisible={setIsVisible}
     />

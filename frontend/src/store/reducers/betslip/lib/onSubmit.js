@@ -1,3 +1,3 @@
-export const onSubmit = (state, action) => (
+export const onSubmit = (state, event) => (
   state
 )

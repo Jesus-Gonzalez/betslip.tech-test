@@ -6,10 +6,7 @@ import styles from './styles.module.scss'
 
 const propTypes = {
   labelKey: PropTypes.string,
-  option: PropTypes.shapeOf({
-    label: PropTypes.string.isRequired,
-    value: PropTypes.oneOf([PropTypes.number, PropTypes.string]).isRequired
-  })
+  option: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 const defaultProps = {
@@ -19,25 +16,25 @@ const defaultProps = {
 export const DropdownOption = ({
   className,
   labelKey,
-  onSelectDropdownOption,
+  onChange,
   option,
-  selectedOption,
+  selected,
   ...props
 }) => {
-  const selected = React.useMemo(
-    () => selectedOption === option,
-    [selectedOption, option]
+  const isSelected = React.useMemo(
+    () => selected === option,
+    [selected, option]
   )
 
   const optionClassname = React.useMemo(
-    () => classnames(className, styles.option, { selected }),
-    [className]
+    () => classnames(className, styles.option, { isSelected }),
+    [className, isSelected]
   )
 
   return (
     <li
       className={optionClassname}
-      onClick={() => onSelectDropdownOption(option)}
+      onClick={() => onChange(option)}
     >
       {option[labelKey]}
     </li>

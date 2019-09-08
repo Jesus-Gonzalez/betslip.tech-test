@@ -1,2 +1,4 @@
-export * from './fetchBets'
 export * from './onChangeStake'
+export * from './setBets'
+export * from './setError'
+export * from './setLoading'

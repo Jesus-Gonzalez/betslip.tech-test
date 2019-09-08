@@ -7,14 +7,16 @@ import {
   DropdownWrapper
 } from 'components/Dropdown/components'
 
-export const Dropdown = ({ isVisible, ...props }) => (
-  <DropdownWrapper {...props}>
-    <DropdownTrigger
-      {...props}
-    />
-    {isVisible && <DropdownSelector {...props} />}
-  </DropdownWrapper>
-)
+export const Dropdown = (props) => {
+  const { isVisible } = props
+
+  return (
+    <DropdownWrapper {...props}>
+      <DropdownTrigger {...props} />
+      {isVisible && <DropdownSelector {...props} />}
+    </DropdownWrapper>
+  )
+}
 
 Dropdown.propTypes = {
   isVisible: PropTypes.bool.isRequired,
