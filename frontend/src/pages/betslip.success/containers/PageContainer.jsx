@@ -4,7 +4,7 @@ import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 
-import { PageLayout } from 'pages/betslip/components'
+import { PageLayout } from 'pages/betslip.success/components'
 
 const propTypes = {
   history: PropTypes.object.isRequired,
