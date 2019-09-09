@@ -1,9 +1,6 @@
 import React from 'react'
-import classnames from 'classnames'
 
 import { RenderInput } from 'components'
-
-import styles from './styles.module.scss'
 
 const hasNonNumbersRegex = /[^,\d]/
 const removeNonNumberChars = (value, prevValue) => {
@@ -16,17 +13,9 @@ const removeNonNumberChars = (value, prevValue) => {
   return isNextValueValid ? nextValue : prevValue || ''
 }
 
-export const NumericInput = ({ className, ...props }) => {
-  const inputClass = React.useMemo(
-    () => classnames(className, styles.input),
-    [className]
-  )
-
-  return (
-    <RenderInput
-      className={inputClass}
-      normalize={removeNonNumberChars}
-      {...props}
-    />
-  )
-}
+export const NumericInput = ({ className, ...props }) => (
+  <RenderInput
+    normalize={removeNonNumberChars}
+    {...props}
+  />
+)

@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
 
 import { DropdownOption } from 'components/Dropdown/components'
 
-import styles from './styles.module.scss'
+import styles from './DropdownSelector.module.scss'
 
 const propTypes = {
   className: PropTypes.string,
@@ -28,11 +27,6 @@ export const DropdownSelector = ({
   selected,
   ...props
 }) => {
-  const selectorClass = React.useMemo(
-    () => classnames(className, styles.selector),
-    [className]
-  )
-
   const renderedOptions = React.useMemo(
     () => options.map(option => (
       <DropdownOption
@@ -47,9 +41,11 @@ export const DropdownSelector = ({
   )
 
   return (
-    <ul className={selectorClass}>
-      {renderedOptions}
-    </ul>
+    <div className={styles.wrapper}>
+      <ul className={styles.selector}>
+        {renderedOptions}
+      </ul>
+    </div>
   )
 }
 

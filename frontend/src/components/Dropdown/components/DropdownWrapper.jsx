@@ -1,7 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 
-import styles from './styles.module.scss'
+import styles from './DropdownWrapper.module.scss'
 
 export const DropdownWrapper = ({
   children,
@@ -9,7 +9,7 @@ export const DropdownWrapper = ({
   ...props
 }) => {
   const wrapperClass = React.useMemo(
-    () => classnames(className, styles.wrapper),
+    () => classnames(className, styles.dropdown),
     [className]
   )
 

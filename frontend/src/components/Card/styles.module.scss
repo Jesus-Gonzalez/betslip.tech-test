@@ -1,3 +1,19 @@
 .card {
-  border: 1px solid red;
+  overflow: hidden;
+
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+
+  position: relative;
+  padding: 25px;
+}
+
+.corner:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  background-color: #fddb00;
 }

@@ -4,7 +4,7 @@ import classnames from 'classnames'
 
 import { downArrow as downArrowIcon } from 'assets/images'
 
-import styles from './styles.module.scss'
+import styles from './Arrow.module.scss'
 
 const propTypes = {
   className: PropTypes.string,
@@ -16,7 +16,7 @@ const defaultProps = {
 }
 
 export const Arrow = ({ className, isVisible, ...props }) => {
-  const arrowClass = classnames(className, isVisible && styles.up)
+  const arrowClass = classnames(className, styles.arrow, isVisible && styles.up)
 
   return (
     <img

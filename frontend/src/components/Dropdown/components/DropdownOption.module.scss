@@ -1,0 +1,20 @@
+@import 'styles/variables';
+
+.option {
+  padding: 5px 10px;
+  cursor: pointer;
+
+  border-bottom: $borderGrey;
+
+  &:hover {
+    background-color: $colorLightGrey;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.selected {
+  background-color: $colorGrey;
+}

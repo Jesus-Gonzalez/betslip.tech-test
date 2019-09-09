@@ -1,0 +1,19 @@
+@import 'styles/variables';
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.selector {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: $borderGrey;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+}

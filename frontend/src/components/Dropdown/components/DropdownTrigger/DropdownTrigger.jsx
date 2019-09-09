@@ -1,9 +1,8 @@
 import React from 'react'
-import classnames from 'classnames'
-
-import styles from './styles.module.scss'
 
 import { Arrow } from './__components'
+
+import styles from './DropdownTrigger.module.scss'
 
 export const DropdownTrigger = ({
   className,
@@ -11,16 +10,13 @@ export const DropdownTrigger = ({
   selected,
   setIsVisible,
   ...props
-}) => {
-  const triggerClass = React.useMemo(
-    () => classnames(className, styles.trigger),
-    [className]
-  )
-
-  return (
-    <div className={triggerClass} onClick={() => setIsVisible(!isVisible)}>
-      <label>{selected.label}</label>
-      <Arrow isVisible={isVisible} />
-    </div>
-  )
-}
+}) => (
+  <div
+    className={styles.trigger}
+    data-dropdown-clickable
+    onClick={() => setIsVisible(!isVisible)}
+  >
+    <label className={styles.label}>{selected.label}</label>
+    <Arrow className={styles.arrow} isVisible={isVisible} />
+  </div>
+)

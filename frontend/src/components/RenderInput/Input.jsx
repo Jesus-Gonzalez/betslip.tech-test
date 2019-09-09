@@ -1,10 +1,10 @@
 import React from 'react'
 import classnames from 'classnames'
 
-import styles from './styles.module.scss'
+import styles from './Input.module.scss'
 
 export const Input = ({ className, input, ...props }) => {
-  const inputClass = React.memo(
+  const inputClass = React.useMemo(
     () => classnames(className, styles.input),
     [className]
   )

@@ -7,7 +7,7 @@ import {
   DropdownWrapper
 } from 'components/Dropdown/components'
 
-export const Dropdown = (props) => {
+export const Dropdown = React.forwardRef((props, ref) => {
   const { isVisible } = props
 
   return (
@@ -16,7 +16,7 @@ export const Dropdown = (props) => {
       {isVisible && <DropdownSelector {...props} />}
     </DropdownWrapper>
   )
-}
+})
 
 Dropdown.propTypes = {
   isVisible: PropTypes.bool.isRequired,

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-import styles from './styles.module.scss'
+import styles from './DropdownOption.module.scss'
 
 const propTypes = {
   labelKey: PropTypes.string,
@@ -27,16 +27,16 @@ export const DropdownOption = ({
   )
 
   const optionClassname = React.useMemo(
-    () => classnames(className, styles.option, { isSelected }),
+    () => classnames(className, styles.option, isSelected && styles.selected),
     [className, isSelected]
   )
 
   return (
     <li
       className={optionClassname}
+      data-dropdown-clickable
       onClick={() => onChange(option)}
     >
-      {isSelected && '* '}
       {option[labelKey || 'label']}
     </li>
   )

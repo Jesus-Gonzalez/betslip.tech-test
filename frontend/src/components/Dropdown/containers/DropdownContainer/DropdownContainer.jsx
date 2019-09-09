@@ -10,12 +10,28 @@ export const DropdownContainer = ({ onChange, ...props }) => {
     onChange && onChange(option)
   }
 
+  const hideSelector = React.useCallback((event) => {
+    if (!event.target.dataset.dropdownClickable) {
+      setIsVisible(false)
+    }
+  }, [setIsVisible])
+
+  const _setIsVisible = (isVisible) => {
+    setIsVisible(isVisible)
+
+    const crudEventListener = isVisible
+      ? document.addEventListener
+      : document.removeEventListener
+
+    crudEventListener('click', hideSelector)
+  }
+
   return (
     <Dropdown
       {...props}
       isVisible={isVisible}
       onChange={onChangeOption}
-      setIsVisible={setIsVisible}
+      setIsVisible={_setIsVisible}
     />
   )
 }
