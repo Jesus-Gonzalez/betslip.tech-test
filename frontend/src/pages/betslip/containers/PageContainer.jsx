@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
 
 import { PageLayout } from 'pages/betslip/components'
 
@@ -11,7 +12,11 @@ const propTypes = {
   fetchBets: PropTypes.func.isRequired
 }
 
-const PageContainer = ({ fetchBets, selectedFilter }) => {
+const PageContainer = ({ error, fetchBets, history, selectedFilter }) => {
+  React.useEffect(() => {
+    error && history.push('/betslip/error', { error })
+  }, [error])
+
   React.useEffect(() => {
     fetchBets(selectedFilter)
   }, [fetchBets, selectedFilter])
@@ -29,8 +34,11 @@ const mapDispatchToProps = dispatch => ({
   fetchBets: compose(dispatch, fetchBetsAction)
 })
 
-const ConnectedPageContainer = connect(
-  mapStateToProps, mapDispatchToProps
+const ConnectedPageContainer = compose(
+  connect(
+    mapStateToProps, mapDispatchToProps
+  ),
+  withRouter
 )(PageContainer)
 
 export { ConnectedPageContainer as PageContainer }

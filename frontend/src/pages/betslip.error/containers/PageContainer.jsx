@@ -11,7 +11,9 @@ const propTypes = {
   error: PropTypes.object.isRequired
 }
 
-const PageContainer = ({ history, error }) => {
+const PageContainer = ({ error, history, match, ...props }) => {
+  console.log('betslip.error(match)', match)
+  console.log('betslip.error(props)', props)
   const goBack = () => {
     history.push('/betslip')
   }
