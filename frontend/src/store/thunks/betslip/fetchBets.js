@@ -23,7 +23,7 @@ export const fetchBets = ({ value: filter = 'all' }) => dispatch => {
     })
     .catch(exception => {
       Dispatcher.setError({
-        error: true,
+        type: 'fetch',
         exception,
         method: 'fetchBets.betsAsync'
       })
