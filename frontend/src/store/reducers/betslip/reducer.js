@@ -8,7 +8,9 @@ const initialState = {
   bets: [],
   error: null,
   isLoading: false,
-  selectedFilter: availableFilters.find(filter => filter.default)
+  result: {},
+  selectedFilter: availableFilters.find(filter => filter.default),
+  totalStake: 0
 }
 
 export const Reducer = (state = initialState, { type, ...payload }) => {

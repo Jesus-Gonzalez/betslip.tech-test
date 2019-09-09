@@ -1,6 +1,6 @@
 import { ActionTypes } from 'store/actionTypes/betslip'
 
-export const onSubmit = event => ({
+export const onSubmit = (...args) => ({
   type: ActionTypes.onSubmit,
-  event
+  args
 })

@@ -5,20 +5,28 @@ import * as Pages from 'pages'
 
 export const Routing = () => (
   <BrowserRouter>
-    <Route path='/' render={() => <Redirect to='/betslip' />} />
-    <Route path='/error' component={Pages.Error} />
-    <Route path='/betslip'>
-      <Route
-        component={Pages.Betslip}
-      />
-      <Route
-        path='/betslip/success'
-        component={Pages.BetslipSuccess}
-      />
-      <Route
-        path='/betslip/error'
-        component={Pages.BetslipError}
-      />
-    </Route>
+    <Route
+      path='/'
+      render={() => <Redirect to='/betslip' />}
+    />
+    <Route
+      path='/error'
+      component={Pages.Error}
+    />
+    <Route
+      exact
+      path='/betslip'
+      component={Pages.Betslip}
+    />
+    <Route
+      exact
+      path='/betslip/success'
+      component={Pages.BetslipSuccess}
+    />
+    <Route
+      exact
+      path='/betslip/error'
+      component={Pages.BetslipError}
+    />
   </BrowserRouter>
 )

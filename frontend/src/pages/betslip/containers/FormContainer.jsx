@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { reduxForm, Form as ReduxForm } from 'redux-form'
+import { withRouter } from 'react-router'
 
 import { onSubmit as onSubmitAction } from 'store/actions/betslip'
 
@@ -13,24 +14,38 @@ import { validate } from 'pages/betslip/helpers'
 const propTypes = {
   bets: PropTypes.arrayOf(PropTypes.object).isRequired,
   isLoading: PropTypes.bool.isRequired,
-  onSubmit: PropTypes.func.isRequired
+  onSubmit: PropTypes.func.isRequired,
+  submitSucceeded: PropTypes.bool.isRequired
 }
 
 const FormContainer = ({
   bets,
   handleSubmit,
-  isLoading
-}) => (
-  <ReduxForm
-    onSubmit={handleSubmit}
-  >
-    {
-      isLoading
-        ? <Loading />
-        : <Form bets={bets} />
-    }
-  </ReduxForm>
-)
+  history,
+  isLoading,
+  submitSucceeded
+}) => {
+  React.useEffect(
+    () => {
+      if (!submitSucceeded) return
+
+      history.push('/betslip/success')
+    },
+    [submitSucceeded]
+  )
+
+  return (
+    <ReduxForm
+      onSubmit={handleSubmit}
+    >
+      {
+        isLoading
+          ? <Loading />
+          : <Form bets={bets} />
+      }
+    </ReduxForm>
+  )
+}
 
 FormContainer.propTypes = propTypes
 
@@ -51,7 +66,8 @@ const ConnectedFormContainer = compose(
   reduxForm({
     form: 'betslip.form',
     validate
-  })
+  }),
+  withRouter
 )(FormContainer)
 
 export { ConnectedFormContainer as FormContainer }
