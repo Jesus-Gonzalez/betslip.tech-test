@@ -31,7 +31,7 @@ const FormContainer = ({
 
       history.push('/betslip/success')
     },
-    [submitSucceeded]
+    [history, submitSucceeded]
   )
 
   return (
