@@ -1,0 +1,705 @@
+.flag {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url('assets/flagSprite.svg');
+}
+.flagAD {
+  background-position: 13.235294117647058% 35.714285714285715%
+}
+.flagAE {
+  background-position: 46.3235294117647% 71.42857142857143%
+}
+.flagAF {
+  background-position: 47.05882352941177% 14.285714285714286%
+}
+.flagAG {
+  background-position: 47.05882352941177% 28.571428571428573%
+}
+.flagAI {
+  background-position: 33.088235294117645% 50%
+}
+.flagAL {
+  background-position: 46.3235294117647% 50%
+}
+.flagAM {
+  background-position: 60.294117647058826% 0
+}
+.flagAO {
+  background-position: 80.1470588235294% 35.714285714285715%
+}
+.flagAR {
+  background-position: 86.76470588235294% 14.285714285714286%
+}
+.flagAS {
+  background-position: 86.76470588235294% 21.428571428571427%
+}
+.flagAT {
+  background-position: 13.235294117647058% 92.85714285714286%
+}
+.flagAU {
+  background-position: 79.41176470588235% 92.85714285714286%
+}
+.flagAW {
+  background-position: 86.02941176470588% 92.85714285714286%
+}
+.flagAX {
+  background-position: 93.38235294117646% 7.142857142857143%
+}
+.flagAZ {
+  background-position: 93.38235294117646% 71.42857142857143%
+}
+.flagBA {
+  background-position: 100% 42.857142857142854%
+}
+.flagBB {
+  background-position: 27.022058823529413% 21.428571428571427%
+}
+.flagBD {
+  background-position: 20.404411764705884% 7.341269841269841%
+}
+.flagBE {
+  background-position: 20.404411764705884% 21.428571428571427%
+}
+.flagBF {
+  background-position: 0 28.571428571428573%
+}
+.flagBG {
+  background-position: 6.617647058823529% 28.571428571428573%
+}
+.flagBH {
+  background-position: 13.235294117647058% 28.571428571428573%
+}
+.flagBI {
+  background-position: 19.852941176470587% 28.571428571428573%
+}
+.flagBJ {
+  background-position: 26.470588235294116% 28.571428571428573%
+}
+.flagBL {
+  background-position: 33.8235294117647% 0
+}
+.flagBM {
+  background-position: 33.8235294117647% 7.142857142857143%
+}
+.flagBN {
+  background-position: 33.8235294117647% 14.285714285714286%
+}
+.flagBO {
+  background-position: 33.8235294117647% 21.428571428571427%
+}
+.flagBQ {
+  background-position: 33.8235294117647% 28.571428571428573%
+}
+.flagBR {
+  background-position: 0 35.714285714285715%
+}
+.flagBS {
+  background-position: 6.617647058823529% 35.714285714285715%
+}
+.flagBT {
+  background-position: 20.404411764705884% 0
+}
+.flagBW {
+  background-position: 19.852941176470587% 35.714285714285715%
+}
+.flagBY {
+  background-position: 26.470588235294116% 35.714285714285715%
+}
+.flagBZ {
+  background-position: 33.088235294117645% 35.714285714285715%
+}
+.flagCA {
+  background-position: 40.44117647058823% 0
+}
+.flagCD {
+  background-position: 40.44117647058823% 7.142857142857143%
+}
+.flagCF {
+  background-position: 40.44117647058823% 14.285714285714286%
+}
+.flagCH {
+  background-position: 40.44117647058823% 21.428571428571427%
+}
+.flagCI {
+  background-position: 40.44117647058823% 28.571428571428573%
+}
+.flagCK {
+  background-position: 40.44117647058823% 35.714285714285715%
+}
+.flagCL {
+  background-position: 0 42.857142857142854%
+}
+.flagCM {
+  background-position: 6.617647058823529% 42.857142857142854%
+}
+.flagCN {
+  background-position: 13.235294117647058% 42.857142857142854%
+}
+.flagCO {
+  background-position: 19.852941176470587% 42.857142857142854%
+}
+.flagCR {
+  background-position: 26.470588235294116% 42.857142857142854%
+}
+.flagCU {
+  background-position: 33.088235294117645% 42.857142857142854%
+}
+.flagCV {
+  background-position: 39.705882352941174% 42.857142857142854%
+}
+.flagCX {
+  background-position: 47.05882352941177% 0
+}
+.flagCY {
+  background-position: 47.05882352941177% 7.142857142857143%
+}
+.flagCZ {
+  background-position: 0 7.142857142857143%
+}
+.flagDE {
+  background-position: 47.05882352941177% 21.428571428571427%
+}
+.flagDJ {
+  background-position: 6.813996316758748% 7.142857142857143%
+}
+.flagDK {
+  background-position: 47.05882352941177% 35.714285714285715%
+}
+.flagDM {
+  background-position: 47.05882352941177% 42.857142857142854%
+}
+.flagDO {
+  background-position: 0 50%
+}
+.flagDZ {
+  background-position: 6.617647058823529% 50%
+}
+.flagEC {
+  background-position: 13.235294117647058% 50%
+}
+.flagEE {
+  background-position: 19.852941176470587% 50%
+}
+.flagEG {
+  background-position: 26.470588235294116% 50%
+}
+.flagEH {
+  background-position: 13.627992633517495% 0
+}
+.flagEN {
+  background-position: 39.705882352941174% 50%
+}
+.flagER {
+  background-position: 13.627992633517495% 7.142857142857143%
+}
+.flagES {
+  background-position: 53.6764705882353% 0
+}
+.flagET {
+  background-position: 53.6764705882353% 7.142857142857143%
+}
+.flagFI {
+  background-position: 53.6764705882353% 14.285714285714286%
+}
+.flagFJ {
+  background-position: 53.6764705882353% 21.428571428571427%
+}
+.flagFK {
+  background-position: 53.6764705882353% 28.571428571428573%
+}
+.flagFO {
+  background-position: 53.6764705882353% 35.714285714285715%
+}
+.flagFR {
+  background-position: 53.6764705882353% 42.857142857142854%
+}
+.flagGA {
+  background-position: 53.6764705882353% 50%
+}
+.flagGB {
+  background-position: 0 57.142857142857146%
+}
+.flagGD {
+  background-position: 6.617647058823529% 57.142857142857146%
+}
+.flagGE {
+  background-position: 13.235294117647058% 57.142857142857146%
+}
+.flagGG {
+  background-position: 19.852941176470587% 57.142857142857146%
+}
+.flagGH {
+  background-position: 26.470588235294116% 57.142857142857146%
+}
+.flagGI {
+  background-position: 33.088235294117645% 57.142857142857146%
+}
+.flagGL {
+  background-position: 39.705882352941174% 57.142857142857146%
+}
+.flagGM {
+  background-position: 46.3235294117647% 57.142857142857146%
+}
+.flagGN {
+  background-position: 52.94117647058823% 57.142857142857146%
+}
+.flagGQ {
+  background-position: 0 14.285714285714286%
+}
+.flagGR {
+  background-position: 60.294117647058826% 7.142857142857143%
+}
+.flagGT {
+  background-position: 60.294117647058826% 14.285714285714286%
+}
+.flagGU {
+  background-position: 60.294117647058826% 21.428571428571427%
+}
+.flagGW {
+  background-position: 60.294117647058826% 28.571428571428573%
+}
+.flagGY {
+  background-position: 60.294117647058826% 35.714285714285715%
+}
+.flagHK {
+  background-position: 60.294117647058826% 42.857142857142854%
+}
+.flagHN {
+  background-position: 60.294117647058826% 50%
+}
+.flagHR {
+  background-position: 60.294117647058826% 57.142857142857146%
+}
+.flagHT {
+  background-position: 0 64.28571428571429%
+}
+.flagHU {
+  background-position: 6.617647058823529% 64.28571428571429%
+}
+.flagID {
+  background-position: 13.235294117647058% 64.28571428571429%
+}
+.flagIE {
+  background-position: 19.852941176470587% 64.28571428571429%
+}
+.flagIL {
+  background-position: 26.470588235294116% 64.28571428571429%
+}
+.flagIM {
+  background-position: 33.088235294117645% 64.28571428571429%
+}
+.flagIN {
+  background-position: 39.705882352941174% 64.28571428571429%
+}
+.flagIO {
+  background-position: 46.3235294117647% 64.28571428571429%
+}
+.flagIQ {
+  background-position: 52.94117647058823% 64.28571428571429%
+}
+.flagIR {
+  background-position: 59.55882352941177% 64.28571428571429%
+}
+.flagIS {
+  background-position: 66.91176470588235% 0
+}
+.flagIT {
+  background-position: 66.91176470588235% 7.142857142857143%
+}
+.flagJE {
+  background-position: 66.91176470588235% 14.285714285714286%
+}
+.flagJM {
+  background-position: 66.91176470588235% 21.428571428571427%
+}
+.flagJO {
+  background-position: 66.91176470588235% 28.571428571428573%
+}
+.flagJP {
+  background-position: 66.91176470588235% 35.714285714285715%
+}
+.flagKE {
+  background-position: 66.91176470588235% 42.857142857142854%
+}
+.flagKG {
+  background-position: 66.91176470588235% 50%
+}
+.flagKH {
+  background-position: 66.91176470588235% 57.142857142857146%
+}
+.flagKI {
+  background-position: 66.91176470588235% 64.28571428571429%
+}
+.flagKM {
+  background-position: 0 71.42857142857143%
+}
+.flagKN {
+  background-position: 6.617647058823529% 71.42857142857143%
+}
+.flagKP {
+  background-position: 13.235294117647058% 71.42857142857143%
+}
+.flagKR {
+  background-position: 19.852941176470587% 71.42857142857143%
+}
+.flagKW {
+  background-position: 26.470588235294116% 71.42857142857143%
+}
+.flagKY {
+  background-position: 33.088235294117645% 71.42857142857143%
+}
+.flagKZ {
+  background-position: 39.705882352941174% 71.42857142857143%
+}
+.flagLA {
+  background-position: 27.022058823529413% 14.285714285714286%
+}
+.flagLB {
+  background-position: 52.94117647058823% 71.42857142857143%
+}
+.flagLC {
+  background-position: 59.55882352941177% 71.42857142857143%
+}
+.flagLI {
+  background-position: 66.17647058823529% 71.42857142857143%
+}
+.flagLK {
+  background-position: 73.52941176470588% 0
+}
+.flagLR {
+  background-position: 73.52941176470588% 7.142857142857143%
+}
+.flagLS {
+  background-position: 73.52941176470588% 14.285714285714286%
+}
+.flagLT {
+  background-position: 73.52941176470588% 21.428571428571427%
+}
+.flagLU {
+  background-position: 73.52941176470588% 28.571428571428573%
+}
+.flagLV {
+  background-position: 73.52941176470588% 35.714285714285715%
+}
+.flagLY {
+  background-position: 73.52941176470588% 42.857142857142854%
+}
+.flagMA {
+  background-position: 73.52941176470588% 50%
+}
+.flagMC {
+  background-position: 73.52941176470588% 57.142857142857146%
+}
+.flagMD {
+  background-position: 73.52941176470588% 64.28571428571429%
+}
+.flagME {
+  background-position: 73.52941176470588% 71.42857142857143%
+}
+.flagMG {
+  background-position: 0 78.57142857142857%
+}
+.flagMH {
+  background-position: 6.617647058823529% 78.57142857142857%
+}
+.flagMK {
+  background-position: 13.235294117647058% 78.57142857142857%
+}
+.flagML {
+  background-position: 19.852941176470587% 78.57142857142857%
+}
+.flagMM {
+  background-position: 26.470588235294116% 78.57142857142857%
+}
+.flagMN {
+  background-position: 33.088235294117645% 78.57142857142857%
+}
+.flagMO {
+  background-position: 39.705882352941174% 78.57142857142857%
+}
+.flagMP {
+  background-position: 46.3235294117647% 78.57142857142857%
+}
+.flagMQ {
+  background-position: 52.94117647058823% 78.57142857142857%
+}
+.flagMR {
+  background-position: 59.55882352941177% 78.57142857142857%
+}
+.flagMS {
+  background-position: 66.17647058823529% 78.57142857142857%
+}
+.flagMT {
+  background-position: 72.79411764705883% 78.57142857142857%
+}
+.flagMU {
+  background-position: 80.1470588235294% 0
+}
+.flagMV {
+  background-position: 80.1470588235294% 7.142857142857143%
+}
+.flagMW {
+  background-position: 80.1470588235294% 14.285714285714286%
+}
+.flagMX {
+  background-position: 80.1470588235294% 21.428571428571427%
+}
+.flagMY {
+  background-position: 80.1470588235294% 28.571428571428573%
+}
+.flagMZ {
+  background-position: 6.813996316758748% 14.285714285714286%
+}
+.flagNA {
+  background-position: 80.1470588235294% 42.857142857142854%
+}
+.flagNE {
+  background-position: 80.1470588235294% 50%
+}
+.flagNF {
+  background-position: 80.1470588235294% 57.142857142857146%
+}
+.flagNG {
+  background-position: 80.1470588235294% 64.28571428571429%
+}
+.flagNI {
+  background-position: 80.1470588235294% 71.42857142857143%
+}
+.flagNL {
+  background-position: 80.1470588235294% 78.57142857142857%
+}
+.flagNN {
+  background-position: 0 85.71428571428571%
+}
+.flagNO {
+  background-position: 6.617647058823529% 85.71428571428571%
+}
+.flagNP {
+  background-position: 13.235294117647058% 85.71428571428571%
+}
+.flagNR {
+  background-position: 19.852941176470587% 85.71428571428571%
+}
+.flagNU {
+  background-position: 26.470588235294116% 85.71428571428571%
+}
+.flagNZ {
+  background-position: 33.088235294117645% 85.71428571428571%
+}
+.flagOM {
+  background-position: 39.705882352941174% 85.71428571428571%
+}
+.flagPA {
+  background-position: 46.3235294117647% 85.71428571428571%
+}
+.flagPE {
+  background-position: 52.94117647058823% 85.71428571428571%
+}
+.flagPF {
+  background-position: 59.55882352941177% 85.71428571428571%
+}
+.flagPG {
+  background-position: 66.17647058823529% 85.71428571428571%
+}
+.flagPH {
+  background-position: 72.79411764705883% 85.71428571428571%
+}
+.flagPK {
+  background-position: 79.41176470588235% 85.71428571428571%
+}
+.flagPL {
+  background-position: 86.76470588235294% 0
+}
+.flagPN {
+  background-position: 86.76470588235294% 7.142857142857143%
+}
+.flagPR {
+  background-position: 0 0
+}
+.flagPS {
+  background-position: 13.627992633517495% 14.285714285714286%
+}
+.flagPT {
+  background-position: 86.76470588235294% 28.571428571428573%
+}
+.flagPW {
+  background-position: 86.76470588235294% 35.714285714285715%
+}
+.flagPY {
+  background-position: 86.76470588235294% 42.857142857142854%
+}
+.flagQA {
+  background-position: 86.76470588235294% 50%
+}
+.flagRO {
+  background-position: 86.76470588235294% 57.142857142857146%
+}
+.flagRS {
+  background-position: 86.76470588235294% 64.28571428571429%
+}
+.flagRU {
+  background-position: 86.76470588235294% 71.42857142857143%
+}
+.flagRW {
+  background-position: 86.76470588235294% 78.57142857142857%
+}
+.flagSA {
+  background-position: 86.76470588235294% 85.71428571428571%
+}
+.flagSB {
+  background-position: 0 92.85714285714286%
+}
+.flagSC {
+  background-position: 6.617647058823529% 92.85714285714286%
+}
+.flagSD {
+  background-position: 0 21.428571428571427%
+}
+.flagSE {
+  background-position: 19.852941176470587% 92.85714285714286%
+}
+.flagSG {
+  background-position: 26.470588235294116% 92.85714285714286%
+}
+.flagSI {
+  background-position: 33.088235294117645% 92.85714285714286%
+}
+.flagSK {
+  background-position: 39.705882352941174% 92.85714285714286%
+}
+.flagSL {
+  background-position: 46.3235294117647% 92.85714285714286%
+}
+.flagSM {
+  background-position: 52.94117647058823% 92.85714285714286%
+}
+.flagSN {
+  background-position: 59.55882352941177% 92.85714285714286%
+}
+.flagSO {
+  background-position: 66.17647058823529% 92.85714285714286%
+}
+.flagSR {
+  background-position: 72.79411764705883% 92.85714285714286%
+}
+.flagSS {
+  background-position: 6.813996316758748% 21.428571428571427%
+}
+.flagST {
+  background-position: 13.627992633517495% 21.428571428571427%
+}
+.flagSV {
+  background-position: 93.38235294117646% 0
+}
+.flagSX {
+  background-position: 27.07182320441989% 0
+}
+.flagSY {
+  background-position: 93.38235294117646% 14.285714285714286%
+}
+.flagSZ {
+  background-position: 93.38235294117646% 21.428571428571427%
+}
+.flagTC {
+  background-position: 93.38235294117646% 28.571428571428573%
+}
+.flagTD {
+  background-position: 93.38235294117646% 35.714285714285715%
+}
+.flagTG {
+  background-position: 93.38235294117646% 42.857142857142854%
+}
+.flagTH {
+  background-position: 93.38235294117646% 50%
+}
+.flagTJ {
+  background-position: 93.38235294117646% 57.142857142857146%
+}
+.flagTK {
+  background-position: 93.38235294117646% 64.28571428571429%
+}
+.flagTL {
+  background-position: 27.07182320441989% 7.142857142857143%
+}
+.flagTM {
+  background-position: 93.38235294117646% 78.57142857142857%
+}
+.flagTN {
+  background-position: 93.38235294117646% 85.71428571428571%
+}
+.flagTO {
+  background-position: 93.38235294117646% 92.85714285714286%
+}
+.flagTR {
+  background-position: 0 100%
+}
+.flagTT {
+  background-position: 6.617647058823529% 100%
+}
+.flagTV {
+  background-position: 13.235294117647058% 100%
+}
+.flagTW {
+  background-position: 19.852941176470587% 100%
+}
+.flagTZ {
+  background-position: 26.470588235294116% 100%
+}
+.flagUA {
+  background-position: 33.088235294117645% 100%
+}
+.flagUG {
+  background-position: 39.705882352941174% 100%
+}
+.flagUS {
+  background-position: 46.3235294117647% 100%
+}
+.flagUY {
+  background-position: 52.94117647058823% 100%
+}
+.flagUZ {
+  background-position: 59.55882352941177% 100%
+}
+.flagVA {
+  background-position: 66.17647058823529% 100%
+}
+.flagVC {
+  background-position: 72.79411764705883% 100%
+}
+.flagVE {
+  background-position: 79.41176470588235% 100%
+}
+.flagVG {
+  background-position: 86.02941176470588% 100%
+}
+.flagVI {
+  background-position: 92.6470588235294% 100%
+}
+.flagVN {
+  background-position: 100% 0
+}
+.flagVU {
+  background-position: 100% 7.142857142857143%
+}
+.flagWI {
+  background-position: 100% 14.285714285714286%
+}
+.flagWL {
+  background-position: 100% 21.428571428571427%
+}
+.flagWS {
+  background-position: 100% 28.571428571428573%
+}
+.flagYE {
+  background-position: 100% 35.714285714285715%
+}
+.flagZA {
+  background-position: 6.813996316758748% 0
+}
+.flagZM {
+  background-position: 100% 50%
+}
+.flagZW {
+  background-position: 100% 57.142857142857146%
+}

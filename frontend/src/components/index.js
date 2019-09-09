@@ -1,6 +1,7 @@
 export * from './Button/Button'
 export * from './Card'
 export * from './Dropdown'
+export * from './Flag'
 export * from './Image'
 export * from './Layout'
 export * from './NumericInput'
