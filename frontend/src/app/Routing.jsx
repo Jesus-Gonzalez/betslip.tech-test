@@ -28,5 +28,9 @@ export const Routing = () => (
       path='/betslip/error'
       component={Pages.BetslipError}
     />
+    <Route
+      path='/404'
+      component={Pages.NotFound}
+    />
   </BrowserRouter>
 )
