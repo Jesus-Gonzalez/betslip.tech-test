@@ -31,7 +31,10 @@ export const Form = ({ bets, error, submitFailed, ...props }) => {
       </main>
 
       <footer className={styles.footer}>
-        <Button submit>
+        <Button
+          submit
+          className={styles.submit}
+        >
           Bet Now
         </Button>
       </footer>

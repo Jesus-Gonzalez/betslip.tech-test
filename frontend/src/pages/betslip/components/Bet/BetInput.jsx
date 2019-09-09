@@ -26,16 +26,11 @@ export const BetInput = ({ bet, className, index }) => {
 
   return (
     <div className={wrapperClass}>
-      <label
-        className={styles.label}
-        htmlFor={name}
-      >
-        Enter Stake
-      </label>
       <NumericInput
         className={styles.input}
         id={name}
         name={name}
+        placeholder='Stake'
       />
     </div>
   )
