@@ -1,4 +1,3 @@
-export * from './onChangeStake'
 export * from './onChangeFilter'
 export * from './onSubmit'
 export * from './setBets'

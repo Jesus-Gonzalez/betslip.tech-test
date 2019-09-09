@@ -24,7 +24,7 @@ export const RenderInput = ({ className, component, ...props }) => {
 
 RenderInput.propTypes = {
   className: PropTypes.string,
-  component: PropTypes.element
+  component: PropTypes.func
 }
 
 RenderInput.defaultProps = {

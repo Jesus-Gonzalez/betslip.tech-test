@@ -6,7 +6,7 @@ import styles from './styles.module.scss'
 
 const propTypes = {
   labelKey: PropTypes.string,
-  option: PropTypes.arrayOf(PropTypes.object).isRequired
+  option: PropTypes.object.isRequired
 }
 
 const defaultProps = {
@@ -36,7 +36,8 @@ export const DropdownOption = ({
       className={optionClassname}
       onClick={() => onChange(option)}
     >
-      {option[labelKey]}
+      {isSelected && '* '}
+      {option[labelKey || 'label']}
     </li>
   )
 }

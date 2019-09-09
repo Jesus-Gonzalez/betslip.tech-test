@@ -17,7 +17,7 @@ const removeNonNumberChars = (value, prevValue) => {
 }
 
 export const NumericInput = ({ className, ...props }) => {
-  const inputClass = React.memo(
+  const inputClass = React.useMemo(
     () => classnames(className, styles.input),
     [className]
   )

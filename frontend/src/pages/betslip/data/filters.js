@@ -2,7 +2,7 @@ export const availableFilters = [
   {
     default: true,
     label: 'all',
-    value: '*'
+    value: 'all'
   },
   {
     label: 'less than 2',

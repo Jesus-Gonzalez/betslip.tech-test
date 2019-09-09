@@ -3,7 +3,7 @@ import { getActionTypesAsEntries } from 'store/utils'
 const fetchBets = 'BETSLIP::FETCH_BETS'
 const fetchBetsSuccess = 'BETSLIP::FETCH_BETS::SUCCESS'
 const fetchBetsError = 'BETSLIP::FETCH_BETS::ERROR'
-const onChangeStake = 'BETSLIP::ON_CHANGE_STAKE'
+const onChangeFilter = 'BETSLIP::ON_CHANGE_FILTER'
 const onSubmit = 'BETSLIP::ON_SUBMIT'
 const setBets = 'BETSLIP::SET_BETS'
 const setError = 'BETSLIP::SET_ERROR'
@@ -13,7 +13,7 @@ export const ActionTypes = {
   fetchBets,
   fetchBetsSuccess,
   fetchBetsError,
-  onChangeStake,
+  onChangeFilter,
   onSubmit,
   setBets,
   setError,

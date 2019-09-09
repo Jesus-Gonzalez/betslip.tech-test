@@ -4,14 +4,14 @@ import * as Actions from 'store/actions/betslip'
 
 import { fetchAllBets, fetchBetsByFilter } from 'api/betslip'
 
-export const fetchBets = (filter = '*') => dispatch => {
+export const fetchBets = ({ value: filter = 'all' }) => dispatch => {
   const Dispatcher = ['setBets', 'setError', 'setLoading']
     .reduce((obj, action) => ({
       ...obj,
       [action]: compose(dispatch, Actions[action])
     }), {})
 
-  const fetchBetsFn = filter === '*' ? fetchAllBets : fetchBetsByFilter
+  const fetchBetsFn = filter === 'all' ? fetchAllBets : fetchBetsByFilter
 
   const betsAsync = fetchBetsFn(filter)
 

@@ -8,7 +8,8 @@ import { Arrow } from './__components'
 export const DropdownTrigger = ({
   className,
   isVisible,
-  selectedOption,
+  selected,
+  setIsVisible,
   ...props
 }) => {
   const triggerClass = React.useMemo(
@@ -17,8 +18,8 @@ export const DropdownTrigger = ({
   )
 
   return (
-    <div className={triggerClass}>
-      <label>{selectedOption.label}</label>
+    <div className={triggerClass} onClick={() => setIsVisible(!isVisible)}>
+      <label>{selected.label}</label>
       <Arrow isVisible={isVisible} />
     </div>
   )

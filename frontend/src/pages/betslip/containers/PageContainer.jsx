@@ -11,22 +11,26 @@ const propTypes = {
   fetchBets: PropTypes.func.isRequired
 }
 
-const PageContainer = ({ fetchBets }) => {
+const PageContainer = ({ fetchBets, selectedFilter }) => {
   React.useEffect(() => {
-    fetchBets()
-  }, [fetchBets])
+    fetchBets(selectedFilter)
+  }, [fetchBets, selectedFilter])
 
   return <PageLayout />
 }
 
 PageContainer.propTypes = propTypes
 
+const mapStateToProps = state => ({
+  selectedFilter: state.Betslip.selectedFilter
+})
+
 const mapDispatchToProps = dispatch => ({
   fetchBets: compose(dispatch, fetchBetsAction)
 })
 
 const ConnectedPageContainer = connect(
-  null, mapDispatchToProps
+  mapStateToProps, mapDispatchToProps
 )(PageContainer)
 
 export { ConnectedPageContainer as PageContainer }

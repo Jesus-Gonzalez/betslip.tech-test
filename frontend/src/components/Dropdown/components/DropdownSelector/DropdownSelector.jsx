@@ -11,7 +11,7 @@ const propTypes = {
   labelKey: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
-  selected: PropTypes.bool
+  selected: PropTypes.object
 }
 
 const defaultProps = {
