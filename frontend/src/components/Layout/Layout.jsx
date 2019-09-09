@@ -12,13 +12,18 @@ const propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
-  ])
+  ]),
+  className: PropTypes.string
 }
 
-export const Layout = ({ children, ...props }) => (
+const defaultProps = {
+  className: ''
+}
+
+export const Layout = ({ children, className, ...props }) => (
   <Body>
     <Header />
-    <Main>
+    <Main className={className}>
       {children}
     </Main>
     <Footer />
@@ -26,3 +31,5 @@ export const Layout = ({ children, ...props }) => (
 )
 
 Layout.propTypes = propTypes
+
+Layout.defaultProps = defaultProps

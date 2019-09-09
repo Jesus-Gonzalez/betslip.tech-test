@@ -1,23 +1,26 @@
 import React from 'react'
-import classnames from 'classnames'
+
+import { logo } from 'assets/images'
+
+import { Image } from 'components'
+
+import { Links, Social } from './__components'
 
 import styles from './styles.module.scss'
 
 export const Footer = React.memo(({
   className,
   ...props
-}) => {
-  const footerClass = React.useMemo(
-    () => classnames(className, styles.footer),
-    [className]
-  )
-
-  return (
-    <footer
-      {...props}
-      className={footerClass}
-    >
-      Developed by Jesus Gonzalez Jaen as a Technical Test for OddsChecker
-    </footer>
-  )
-})
+}) => (
+  <footer
+    {...props}
+    className={styles.footer}
+  >
+    <Image
+      className={styles.logo}
+      src={logo}
+    />
+    <Social />
+    <Links />
+  </footer>
+))

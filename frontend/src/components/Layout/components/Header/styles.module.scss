@@ -1,3 +1,5 @@
-.card {
-  border: 1px solid red;
+@import 'styles/variables';
+
+.header {
+  background-color: $bgColorDark;
 }

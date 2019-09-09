@@ -1,0 +1,24 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  :global(.icon) {
+    margin-left: 12px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.networks, .gambling {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.networks {
+  margin-bottom: 20px;
+}
