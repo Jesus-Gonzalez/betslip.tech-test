@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
@@ -13,6 +15,9 @@ const propTypes = {
 }
 
 const PageContainer = ({ error, fetchBets, history, selectedFilter }) => {
+  // uncomment next line to test application error handler
+  // throw new Error('unexpected frontend non-handled exception')
+
   React.useEffect(() => {
     error && history.push('/betslip/error', { error })
   }, [error, history])

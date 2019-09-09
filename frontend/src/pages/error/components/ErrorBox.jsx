@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Button } from 'components'
 
-import { errorMessages } from 'pages/betslip.error/data'
+import styles from './ErrorBox.module.scss'
 
 const propTypes = {
   error: PropTypes.object,
@@ -14,11 +14,17 @@ const defaultProps = {
   error: {}
 }
 
-export const ErrorBox = React.memo(({ error, goBack }) => (
+export const ErrorBox = React.memo(({ goBack }) => (
   <main>
-    <h2>An error occured on the Betslip</h2>
-    <p>{errorMessages[error.type]}</p>
-    <Button onClick={goBack}>Go Back</Button>
+    <h1>Internal Application Error</h1>
+    <p>An error occured and the application has crashed.</p>
+    <p>Try again, and if the problem is persistent, please, contact the system administrator.</p>
+    <Button
+      className={styles.button}
+      onClick={goBack}
+    >
+      Go Back
+    </Button>
   </main>
 ))
 

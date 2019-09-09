@@ -5,10 +5,14 @@ import 'styles/base/index.scss'
 
 import { store } from 'store'
 
+import { ErrorHandler } from 'containers'
+
 import { Routing } from 'app'
 
 export const App = () => (
-  <Provider store={store}>
-    <Routing />
-  </Provider>
+  <ErrorHandler>
+    <Provider store={store}>
+      <Routing />
+    </Provider>
+  </ErrorHandler>
 )

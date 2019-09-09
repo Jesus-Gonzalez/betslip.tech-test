@@ -1,33 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
-import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 
 import { PageLayout } from 'pages/error/components'
 
 const propTypes = {
+  error: PropTypes.object,
   history: PropTypes.object.isRequired,
-  error: PropTypes.object
+  match: PropTypes.object.isRequired
 }
 
 const defaultProps = {
   error: null
 }
 
-const PageContainer = ({ error, history }) => {
-  React.useEffect(() => {
-    !error && history.push('/')
-  }, [error, history])
-
+const PageContainer = ({ history, match }) => {
   const goBack = () => {
     history.push('/betslip')
   }
 
-  return error && (
+  return (
     <PageLayout
       goBack={goBack}
-      error={error}
     />
   )
 }
@@ -36,14 +31,7 @@ PageContainer.propTypes = propTypes
 
 PageContainer.defaultProps = defaultProps
 
-const mapStateToProps = state => ({
-  error: state.Betslip.error
-})
-
 const ConnectedPageContainer = compose(
-  connect(
-    mapStateToProps
-  ),
   withRouter
 )(PageContainer)
 
