@@ -1,7 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 
-import logoImage from 'assets/images/logo.png'
+import { logo as logoImage } from 'assets/images'
 
 import { Image } from 'components'
 
