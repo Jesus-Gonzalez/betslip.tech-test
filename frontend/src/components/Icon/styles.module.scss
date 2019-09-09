@@ -1,0 +1,31 @@
+.icon {
+  display: inline-block;
+  background: url('assets/sprite.png') 0 0/1300px 1100px no-repeat;
+}
+.twitter, .facebook {
+  height: 40px;
+  width: 40px;
+}
+.twitter {
+  background-position: -292px -106px;
+}
+.facebook {
+  background-position: -347px -106px;
+}
+.gamstop {
+  width: 54px;
+  height: 13px;
+  background-position: -907px -120px;
+}
+.over-18 {
+  background-position: -142px -249px;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.gamble-aware {
+  width: 116px;
+  height: 14px;
+  background-position: -691px -119px;
+}
