@@ -1,3 +1,12 @@
 .button {
+  cursor: pointer;
+  min-height: 40px;
+  padding: 15px 40px;
+  background-color: #fddb00;
+  border: none;
+  font-size: 16px;
 
+  &:active, &:focus {
+    outline: none;
+  }
 }
