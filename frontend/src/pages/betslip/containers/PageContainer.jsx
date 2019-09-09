@@ -15,7 +15,7 @@ const propTypes = {
 const PageContainer = ({ error, fetchBets, history, selectedFilter }) => {
   React.useEffect(() => {
     error && history.push('/betslip/error', { error })
-  }, [error])
+  }, [error, history])
 
   React.useEffect(() => {
     fetchBets(selectedFilter)
@@ -27,6 +27,7 @@ const PageContainer = ({ error, fetchBets, history, selectedFilter }) => {
 PageContainer.propTypes = propTypes
 
 const mapStateToProps = state => ({
+  error: state.Betslip.error,
   selectedFilter: state.Betslip.selectedFilter
 })
 

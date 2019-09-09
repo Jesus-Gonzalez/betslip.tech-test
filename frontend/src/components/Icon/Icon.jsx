@@ -6,7 +6,7 @@ import styles from './styles.module.scss'
 
 const propTypes = {
   className: PropTypes.string,
-  country: PropTypes.string.isRequired
+  icon: PropTypes.string.isRequired
 }
 
 const defaultProps = {

@@ -6,8 +6,12 @@ import { Button } from 'components'
 import { errorMessages } from 'pages/betslip.error/data'
 
 const propTypes = {
-  error: PropTypes.object.isRequired,
+  error: PropTypes.object,
   goBack: PropTypes.func.isRequired
+}
+
+const defaultProps = {
+  error: {}
 }
 
 export const ErrorBox = React.memo(({ error, goBack }) => (
@@ -19,3 +23,5 @@ export const ErrorBox = React.memo(({ error, goBack }) => (
 ))
 
 ErrorBox.propTypes = propTypes
+
+ErrorBox.defaultProps = defaultProps

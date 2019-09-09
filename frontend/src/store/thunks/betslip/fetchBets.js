@@ -20,11 +20,13 @@ export const fetchBets = ({ value: filter = 'all' }) => dispatch => {
   betsAsync
     .then(bets => {
       Dispatcher.setBets(bets)
+      // uncomment to test API error handling page
+      // throw new Error('fetchBets')
     })
     .catch(exception => {
       Dispatcher.setError({
         type: 'fetch',
-        exception,
+        exception: JSON.stringify(exception),
         method: 'fetchBets.betsAsync'
       })
     })

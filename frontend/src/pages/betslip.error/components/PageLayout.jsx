@@ -1,12 +1,19 @@
 import React from 'react'
 
-import { Layout } from 'components'
+import { Card, Layout } from 'components'
 
-import { Header, ErrorBox } from 'pages/error/components'
+import { Header, ErrorBox } from 'pages/betslip.error/components'
+
+import styles from './PageLayout.module.scss'
 
 export const PageLayout = React.memo(props => (
-  <Layout>
-    <Header />
-    <ErrorBox {...props} />
+  <Layout className={styles.wrapper}>
+    <Card
+      corner
+      className={styles.card}
+    >
+      <Header />
+      <ErrorBox {...props} />
+    </Card>
   </Layout>
 ))

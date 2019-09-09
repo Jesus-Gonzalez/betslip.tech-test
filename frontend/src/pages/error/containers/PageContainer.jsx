@@ -8,15 +8,23 @@ import { PageLayout } from 'pages/error/components'
 
 const propTypes = {
   history: PropTypes.object.isRequired,
-  error: PropTypes.object.isRequired
+  error: PropTypes.object
 }
 
-const PageContainer = ({ history, error }) => {
+const defaultProps = {
+  error: null
+}
+
+const PageContainer = ({ error, history }) => {
+  React.useEffect(() => {
+    !error && history.push('/')
+  }, [error, history])
+
   const goBack = () => {
     history.push('/betslip')
   }
 
-  return (
+  return error && (
     <PageLayout
       goBack={goBack}
       error={error}
@@ -25,6 +33,8 @@ const PageContainer = ({ history, error }) => {
 }
 
 PageContainer.propTypes = propTypes
+
+PageContainer.defaultProps = defaultProps
 
 const mapStateToProps = state => ({
   error: state.Betslip.error
