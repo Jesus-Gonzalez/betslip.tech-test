@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  display: flex;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}

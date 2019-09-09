@@ -23,7 +23,8 @@ const FormContainer = ({
   handleSubmit,
   history,
   isLoading,
-  submitSucceeded
+  submitSucceeded,
+  ...props
 }) => {
   React.useEffect(
     () => {
@@ -41,7 +42,12 @@ const FormContainer = ({
       {
         isLoading
           ? <Loading />
-          : <Form bets={bets} />
+          : (
+            <Form
+              {...props}
+              bets={bets}
+            />
+          )
       }
     </ReduxForm>
   )

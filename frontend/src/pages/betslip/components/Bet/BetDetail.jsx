@@ -1,6 +1,8 @@
 import React from 'react'
 
-// import styles from './BetDetail.module.scss'
+import { Flag } from 'components'
+
+import styles from './BetDetail.module.scss'
 
 export const BetDetail = React.memo(({ bet }) => {
   const bestOdd = React.useMemo(
@@ -9,14 +11,20 @@ export const BetDetail = React.memo(({ bet }) => {
         odd.oddsDecimal > bestOdd.oddsDecimal
           ? odd
           : bestOdd
-      ), {}),
+      ), bet.odds[0]),
     [bet]
   )
 
   return (
-    <div>
-      <label>{bet.name}</label>
-      <span>{bestOdd.oddsDecimal}</span>
+    <div className={styles.wrapper}>
+      <div className={styles.title}>
+        <Flag country={bet.country} />
+        <label className={styles.name}>{bet.name}</label>
+      </div>
+      <div className={styles.bestOdd}>
+        <label className={styles.title}>Best Odd</label>
+        <output>{bestOdd.oddsDecimal}</output>
+      </div>
     </div>
   )
 })

@@ -6,12 +6,20 @@ import { Filter } from 'pages/betslip/components'
 
 import { onChangeFilter as onChangeFilterAction } from 'store/actions'
 
-const FilterContainer = ({ selectedFilter, ...props }) => (
-  <Filter
-    {...props}
-    selectedFilter={selectedFilter}
-  />
-)
+const FilterContainer = ({ onChangeFilter, selectedFilter, ...props }) => {
+  const _onChangeFilter = (option) => {
+    if (option === selectedFilter) return
+    onChangeFilter(option)
+  }
+
+  return (
+    <Filter
+      {...props}
+      onChangeFilter={_onChangeFilter}
+      selectedFilter={selectedFilter}
+    />
+  )
+}
 
 const mapStateToProps = state => ({
   selectedFilter: state.Betslip.selectedFilter

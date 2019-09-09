@@ -1,6 +1,7 @@
 {
     "bets": [
         {
+            "country": "ES",
             "name": "Sara Errani",
             "genericName": "HOME",
             "bestOddsBookmakers": "B3",
@@ -80,6 +81,7 @@
             ]
         },
         {
+            "country": "US",
             "name": "Darya Kasatkina",
             "genericName": "AWAY",
             "bestOddsBookmakers": "UM",
@@ -159,6 +161,7 @@
             ]
         },
         {
+            "country": "SE",
             "name": "Svetlana Kuznetsova",
             "genericName": "HOME",
             "bestOddsBookmakers": "B3",
@@ -228,6 +231,7 @@
             ]
         },
         {
+            "country": "NL",
             "name": "Johanna Konta",
             "genericName": "AWAY",
             "bestOddsBookmakers": "FS",

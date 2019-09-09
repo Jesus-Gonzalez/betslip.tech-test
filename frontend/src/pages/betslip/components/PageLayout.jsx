@@ -3,12 +3,17 @@ import React from 'react'
 import { Layout } from 'components'
 
 import { FilterContainer, FormContainer } from 'pages/betslip/containers'
-import { Header } from 'pages/betslip/components'
+import { Betslip } from 'pages/betslip/components'
+
+import styles from './PageLayout.module.scss'
 
 export const PageLayout = React.memo(() => (
-  <Layout>
-    <Header />
-    <FilterContainer />
-    <FormContainer />
+  <Layout className={styles.wrapper}>
+    <Betslip>
+      <FilterContainer />
+      <FormContainer
+        className={styles.form}
+      />
+    </Betslip>
   </Layout>
 ))

@@ -1,5 +1,6 @@
 export * from './Bet'
 export * from './BetList'
+export * from './Betslip'
 export * from './EmptyBetList'
 export * from './Filter'
 export * from './Form'
