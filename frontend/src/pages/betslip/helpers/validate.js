@@ -1,5 +1,4 @@
 export const validate = (values) => {
-  // console.log('values', values.be)
   const nextErrors = {}
 
   if (!values.bet) {
