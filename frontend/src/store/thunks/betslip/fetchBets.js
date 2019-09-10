@@ -4,7 +4,7 @@ import * as Actions from 'store/actions/betslip'
 
 import { fetchAllBets, fetchBetsByFilter } from 'api/betslip'
 
-export const fetchBets = ({ value: filter = 'all' }) => dispatch => {
+export const fetchBets = ({ value: filter = 'all' }) => async dispatch => {
   const Dispatcher = ['setBets', 'setError', 'setLoading']
     .reduce((obj, action) => ({
       ...obj,
@@ -15,7 +15,11 @@ export const fetchBets = ({ value: filter = 'all' }) => dispatch => {
 
   const betsAsync = fetchBetsFn(filter)
 
+  const delayAsync = new Promise(resolve => setTimeout(resolve, 2345))
+
   Dispatcher.setLoading(true)
+
+  await delayAsync
 
   betsAsync
     .then(bets => {

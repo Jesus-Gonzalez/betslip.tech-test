@@ -1,8 +1,9 @@
 $colorGrey: #eaeae9;
 $colorLightGrey: #f6f7f7;
 $colorRed: #d70000;
+$colorDarkBlue: #033954;
 
-$bgColorDark: #033954;
+$bgColorDark: $colorDarkBlue;
 
 $borderColorGrey: $colorGrey;
 $borderGrey: 1px solid $borderColorGrey;

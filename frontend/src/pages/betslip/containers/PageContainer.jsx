@@ -14,7 +14,7 @@ const propTypes = {
   fetchBets: PropTypes.func.isRequired
 }
 
-const PageContainer = ({ error, fetchBets, history, selectedFilter }) => {
+const PageContainer = ({ error, fetchBets, history, selectedFilter, ...props }) => {
   // uncomment next line to test application error handler
   // throw new Error('unexpected frontend non-handled exception')
 
@@ -26,7 +26,7 @@ const PageContainer = ({ error, fetchBets, history, selectedFilter }) => {
     fetchBets(selectedFilter)
   }, [fetchBets, selectedFilter])
 
-  return <PageLayout />
+  return <PageLayout { ...props } />
 }
 
 PageContainer.propTypes = propTypes
