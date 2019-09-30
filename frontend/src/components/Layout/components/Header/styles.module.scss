@@ -1,5 +1,12 @@
 @import 'styles/variables';
 
 .header {
+  display: flex;
   background-color: $bgColorDark;
+}
+
+.logo {
+  margin: 15px 0 15px 25px;
+
+  font-size: 46px;
 }

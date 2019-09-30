@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { logo } from 'assets/images'
-
-import { Image } from 'components'
+import { Logo } from 'components'
 
 import { Links, Social } from './__components'
 
@@ -16,9 +14,8 @@ export const Footer = React.memo(({
     {...props}
     className={styles.footer}
   >
-    <Image
+    <Logo
       className={styles.logo}
-      src={logo}
     />
     <Social />
     <Links />
