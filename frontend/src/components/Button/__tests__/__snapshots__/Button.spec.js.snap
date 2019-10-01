@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components(Button) should render 1`] = `"<button type=\\"button\\" class=\\"button\\"></button>"`;
+
+exports[`components(Button) should render className prop 1`] = `"<button type=\\"button\\" class=\\"test-class button\\"></button>"`;
+
+exports[`components(Button) should render innerText on button component 1`] = `"<button type=\\"submit\\" class=\\"button\\">Submit form</button>"`;
+
+exports[`components(Button) should render type submit on submit prop 1`] = `"<button type=\\"submit\\" class=\\"button\\"></button>"`;
